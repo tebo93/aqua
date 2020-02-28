@@ -1,2 +1,2 @@
-include ':app', ':bindview', ':processor'
-rootProject.name='My Application'
+include ':app', ':aqua', ':aqua-processor'
+rootProject.name='aquas'

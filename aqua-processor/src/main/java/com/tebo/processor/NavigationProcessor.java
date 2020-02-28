@@ -1,6 +1,6 @@
-package com.example.processor;
+package com.tebo.processor;
 
-import com.example.bindview.NewIntent;
+import com.tebo.bindview.NewIntent;
 import com.google.common.collect.ImmutableSet;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
@@ -92,7 +92,7 @@ public class NavigationProcessor extends AbstractProcessor {
             /**
              * 3- Write generated class to a file
              */
-            JavaFile.builder("com.example.myapplication", navigatorClass.build()).build().writeTo(filer);
+            JavaFile.builder("com.tebo.aquas", navigatorClass.build()).build().writeTo(filer);
 
 
         } catch (IOException e) {

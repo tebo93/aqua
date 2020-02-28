@@ -1,4 +1,4 @@
-package com.example.bindview;
+package com.tebo.bindview;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
