@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.tebo.bindview.NewIntent;
+import com.tebo.bindview.Starter;
 
-@NewIntent
+@Starter
 public class MainActivity extends AppCompatActivity {
 
     @Override

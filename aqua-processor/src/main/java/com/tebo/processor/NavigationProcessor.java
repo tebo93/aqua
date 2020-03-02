@@ -1,6 +1,6 @@
 package com.tebo.processor;
 
-import com.tebo.bindview.NewIntent;
+import com.tebo.bindview.Starter;
 import com.google.common.collect.ImmutableSet;
 import com.squareup.javapoet.ClassName;
 import com.squareup.javapoet.JavaFile;
@@ -53,7 +53,7 @@ public class NavigationProcessor extends AbstractProcessor {
             /**
              * 1- Find all annotated element
              */
-            for (Element element : roundEnvironment.getElementsAnnotatedWith(NewIntent.class)) {
+            for (Element element : roundEnvironment.getElementsAnnotatedWith(Starter.class)) {
 
                 if (element.getKind() != ElementKind.CLASS) {
                     messager.printMessage(Diagnostic.Kind.ERROR, "Can be applied to class.");
@@ -104,7 +104,7 @@ public class NavigationProcessor extends AbstractProcessor {
 
     @Override
     public Set<String> getSupportedAnnotationTypes() {
-        return ImmutableSet.of(NewIntent.class.getCanonicalName());
+        return ImmutableSet.of(Starter.class.getCanonicalName());
     }
 
     @Override
